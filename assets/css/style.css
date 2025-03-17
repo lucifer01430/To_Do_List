@@ -1,0 +1,585 @@
+/* ✅ Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* ✅ Universal Styling */
+body {
+    background: #f4f6f9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ✅ Navbar Styling */
+.navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffcc00 !important;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* ✅ Logout Button Hover Fix */
+.navbar-nav .nav-link.text-danger:hover {
+    background-color: #ff4d4d !important;
+    color: white !important;
+}
+
+/* ✅ Clean & Elegant Footer */
+.footer {
+    background: #222;
+    color: #bbb;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Footer Links */
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #0dcaf0;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* ✅ Elegant Underline on Hover */
+.footer-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0dcaf0;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%);
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* Social Icons */
+.footer-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-icons a {
+    color: #bbb;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Smooth Hover Effect */
+.footer-icons a:hover {
+    color: white;
+    background: #0dcaf0;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(13, 202, 240, 0.5);
+}
+
+/* Login Form */
+/* ✅ Login Card */
+.card {
+    animation: fadeIn 0.6s ease-in-out;
+    border: none;
+    width: 450px;
+}
+
+/* ✅ Card Header */
+.card h3 {
+    font-weight: 700;
+    color: #007bff;
+    text-align: center;
+}
+
+/* ✅ Input Fields */
+.form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1.8px solid #ced4da;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Input Focus */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* ✅ Valid & Invalid Input Styles */
+.form-control.is-valid {
+    border-color: #28a745;
+    background-color: #e9f7ef;
+    animation: validShake 0.3s ease-in-out;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+    animation: invalidShake 0.3s ease-in-out;
+}
+
+/* ✅ Login Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* ✅ Button Hover */
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ✅ Forgot Password Link */
+.text-primary {
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.text-primary:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* ✅ Alert Messages */
+.alert {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ✅ Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes validShake {
+    0%, 100% { transform: translateX(0); }
+    25%, 75% { transform: translateX(3px); }
+    50% { transform: translateX(-3px); }
+}
+
+@keyframes invalidShake {
+    0%, 100% { transform: translateX(0); }
+    25%, 75% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+
+
+/* ✅ Registration Card */
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ✅ Heading */
+.card h3 {
+    font-weight: 700;
+    color: #007bff;
+    text-align: center;
+}
+
+/* ✅ Input Fields */
+.form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1.8px solid #ced4da;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Input Focus */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* ✅ Valid & Invalid Input Styles */
+.form-control.is-valid {
+    border-color: #28a745;
+    background-color: #e9f7ef;
+    animation: validShake 0.3s ease-in-out;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+    animation: invalidShake 0.3s ease-in-out;
+}
+
+/* ✅ Register Button */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* ✅ Button Hover */
+.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* ✅ Already Have an Account */
+.text-center a {
+    font-weight: 600;
+    color: #007bff;
+    transition: 0.3s ease-in-out;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* ✅ Alert Messages */
+.alert {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ✅ Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes validShake {
+    0%, 100% { transform: translateX(0); }
+    25%, 75% { transform: translateX(3px); }
+    50% { transform: translateX(-3px); }
+}
+
+@keyframes invalidShake {
+    0%, 100% { transform: translateX(0); }
+    25%, 75% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+}
+
+/* ✅ Responsive */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+/* ✅ Dashboard Main Container */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76vh;
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+
+/* ✅ Landscape Dashboard Card */
+.dashboard-card {
+    background: white;
+    padding: 1.8rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 750px;
+    max-width: 90%;
+    min-height: 250px; /* ✅ Prevents excessive height */
+}
+
+/* ✅ Left Section (Text Content) */
+.dashboard-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 15px; /* ✅ Ensures spacing between text & buttons */
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.dashboard-subtitle {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    max-width: 90%;
+}
+
+/* ✅ Right Section (Buttons) */
+.dashboard-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ✅ Buttons */
+.dashboard-actions a {
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    transition: all 0.3s;
+    width: 170px; /* ✅ Ensures uniform button size */
+    text-align: center;
+}
+
+/* ✅ Button Colors */
+.btn-primary { background: #007bff; color: white; }
+.btn-primary:hover { background: #0056b3; }
+
+.btn-success { background: #28a745; color: white; }
+.btn-success:hover { background: #1e7e34; }
+
+.btn-info { background: #17a2b8; color: white; }
+.btn-info:hover { background: #117a8b; }
+
+.btn-danger { background: #dc3545; color: white; }
+.btn-danger:hover { background: #bd2130; }
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+    .dashboard-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .dashboard-content {
+        padding-right: 0;
+    }
+
+    .dashboard-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dashboard-actions a {
+        width: auto;
+        padding: 10px 15px;
+    }
+}
+
+
+/* 🌟 General Styling */
+body {
+    background-color: #f8f9fa; /* Light Gray Background */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌟 Full-Width Card */
+.task-card {
+    width: 100%;
+    max-width: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌟 Form Layout */
+.task-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* 🌟 Left Section (Form) */
+.task-form .form-section {
+    width: 50%;
+    padding: 20px;
+}
+
+/* 🌟 Right Section (Illustration) */
+.task-form .image-section {
+    width: 50%;
+    text-align: center;
+}
+
+.task-form .image-section img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+    .task-form {
+        flex-direction: column;
+    }
+
+    .task-form .form-section,
+    .task-form .image-section {
+        width: 100%;
+        text-align: center;
+    }
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    padding: 2px;
+    object-fit: cover;
+}
+
+.profile-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.profile-card hr {
+    border-top: 2px solid #ddd;
+    margin: 10px 0;
+}
+
+#profileUpload {
+    cursor: pointer;
+}
