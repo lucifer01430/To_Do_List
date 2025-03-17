@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
+    <title>To-Do List Application</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4472/4472515.png" type="image/x-icon">
