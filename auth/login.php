@@ -160,5 +160,35 @@ document.addEventListener("DOMContentLoaded", function () {
     <?php } ?>
 });
 </script>
+<script>
+// ✅ Live Form Validation (JavaScript)
+document.addEventListener("DOMContentLoaded", function () {
+    let emailInput = document.getElementById("email");
+    let passwordInput = document.getElementById("password");
+
+    function validateInput(input, condition) {
+        if (condition) {
+            input.classList.remove("is-invalid");
+            input.classList.add("is-valid");
+        } else {
+            input.classList.remove("is-valid");
+            input.classList.add("is-invalid");
+        }
+    }
+
+    // ✅ Email Validation
+    emailInput.addEventListener("input", function () {
+        let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        validateInput(emailInput, emailPattern.test(emailInput.value));
+    });
+
+    // ✅ Password Validation
+    passwordInput.addEventListener("input", function () {
+        validateInput(passwordInput, passwordInput.value.length >= 6);
+    });
+
+});
+</script>
+
 
 <?php include "../includes/footer.php"; ?>

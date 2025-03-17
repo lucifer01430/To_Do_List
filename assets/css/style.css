@@ -3,13 +3,13 @@
 
 /* ✅ Universal Styling */
 body {
-    background: #f4f6f9;
+    background: #FFC1B4; /* Lightest color from palette for a soft background */
     font-family: 'Montserrat', sans-serif;
 }
 
 /* ✅ Navbar Styling */
 .navbar {
-    background-color: #343a40;
+    background-color: #034C53; /* Darkest color for contrast */
     padding: 10px 20px;
 }
 
@@ -18,7 +18,7 @@ body {
     align-items: center;
     font-weight: 600;
     font-size: 20px;
-    color: #ffcc00 !important;
+    color: #F38C79 !important; /* Vibrant accent color */
 }
 
 .navbar-brand img {
@@ -27,7 +27,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: #f8f9fa !important;
+    color: #FFC1B4 !important; /* Light color for readability */
     font-size: 16px;
     padding: 10px 15px;
     display: flex;
@@ -43,20 +43,21 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: #007bff;
+    background-color: #007074; /* Mid-tone color for hover effect */
+    color: #FFC1B4 !important;
     transform: translateY(-2px);
 }
 
 /* ✅ Logout Button Hover Fix */
 .navbar-nav .nav-link.text-danger:hover {
-    background-color: #ff4d4d !important;
-    color: white !important;
+    background-color: #F38C79 !important; /* Accent color for logout */
+    color: #034C53 !important;
 }
 
 /* ✅ Clean & Elegant Footer */
 .footer {
-    background: #222;
-    color: #bbb;
+    background: #034C53; /* Dark base for footer */
+    color: #FFC1B4; /* Light text for contrast */
     padding: 20px 0;
     font-size: 14px;
     text-align: center;
@@ -73,7 +74,7 @@ body {
 }
 
 .footer-links a {
-    color: #0dcaf0;
+    color: #F38C79; /* Accent color for links */
     margin: 0 12px;
     text-decoration: none;
     font-weight: 600;
@@ -87,7 +88,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: #0dcaf0;
+    background: #F38C79; /* Matching accent color */
     transition: width 0.3s ease-in-out;
     position: absolute;
     left: 50%;
@@ -96,7 +97,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #fff;
+    color: #FFC1B4; /* Light color on hover */
 }
 
 .footer-links a:hover::after {
@@ -112,7 +113,7 @@ body {
 }
 
 .footer-icons a {
-    color: #bbb;
+    color: #FFC1B4; /* Light color for icons */
     font-size: 20px;
     width: 40px;
     height: 40px;
@@ -126,10 +127,10 @@ body {
 
 /* ✅ Smooth Hover Effect */
 .footer-icons a:hover {
-    color: white;
-    background: #0dcaf0;
+    color: #034C53; /* Dark color for contrast */
+    background: #F38C79; /* Accent color */
     transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(13, 202, 240, 0.5);
+    box-shadow: 0 4px 10px rgba(3, 76, 83, 0.5); /* Shadow with palette color */
 }
 
 /* Login Form */
@@ -138,19 +139,21 @@ body {
     animation: fadeIn 0.6s ease-in-out;
     border: none;
     width: 450px;
+    background: #fff; /* White for clean card look */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* ✅ Card Header */
 .card h3 {
     font-weight: 700;
-    color: #007bff;
+    color: #007074; /* Mid-tone color for headers */
     text-align: center;
 }
 
 /* ✅ Input Fields */
 .form-label {
     font-weight: 600;
-    color: #333;
+    color: #034C53; /* Dark color for labels */
 }
 
 .form-control {
@@ -162,49 +165,51 @@ body {
 
 /* ✅ Input Focus */
 .form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.4);
+    border-color: #007074; /* Mid-tone for focus */
+    box-shadow: 0px 0px 10px rgba(0, 112, 116, 0.4);
 }
 
 /* ✅ Valid & Invalid Input Styles */
 .form-control.is-valid {
-    border-color: #28a745;
-    background-color: #e9f7ef;
+    border-color: #007074; /* Consistent with palette */
+    background-color: #FFC1B4; /* Light background */
     animation: validShake 0.3s ease-in-out;
 }
 
 .form-control.is-invalid {
-    border-color: #dc3545;
-    background-color: #f8d7da;
+    border-color: #F38C79; /* Accent for errors */
+    background-color: #FFF1EE; /* Slightly lighter version of accent */
     animation: invalidShake 0.3s ease-in-out;
 }
 
 /* ✅ Login Button */
 .btn-primary {
-    background-color: #007bff;
+    background-color: #007074; /* Mid-tone for primary actions */
     border: none;
     font-size: 16px;
     padding: 12px;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
+    color: #FFC1B4; /* Light text */
 }
 
 /* ✅ Button Hover */
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #034C53; /* Darker shade for hover */
     transform: scale(1.05);
 }
 
 /* ✅ Forgot Password Link */
 .text-primary {
     font-weight: 600;
+    color: #F38C79; /* Accent color */
     transition: 0.3s ease-in-out;
 }
 
 .text-primary:hover {
     text-decoration: underline;
-    color: #0056b3;
+    color: #007074; /* Mid-tone on hover */
 }
 
 /* ✅ Alert Messages */
@@ -213,6 +218,8 @@ body {
     font-size: 14px;
     text-align: center;
     border-radius: 8px;
+    background-color: #FFC1B4; /* Light background */
+    color: #034C53; /* Dark text */
 }
 
 /* ✅ Animations */
@@ -255,8 +262,6 @@ body {
         width: 90%;
     }
 }
-
-
 
 /* ✅ Registration Card */
 .card {
@@ -269,121 +274,34 @@ body {
     animation: fadeIn 0.6s ease-in-out;
 }
 
-/* ✅ Heading */
-.card h3 {
-    font-weight: 700;
-    color: #007bff;
-    text-align: center;
-}
-
-/* ✅ Input Fields */
-.form-label {
-    font-weight: 600;
-    color: #333;
-}
-
-.form-control {
-    border-radius: 10px;
-    border: 1.8px solid #ced4da;
-    padding: 12px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* ✅ Input Focus */
-.form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.4);
-}
-
-/* ✅ Valid & Invalid Input Styles */
-.form-control.is-valid {
-    border-color: #28a745;
-    background-color: #e9f7ef;
-    animation: validShake 0.3s ease-in-out;
-}
-
-.form-control.is-invalid {
-    border-color: #dc3545;
-    background-color: #f8d7da;
-    animation: invalidShake 0.3s ease-in-out;
-}
-
 /* ✅ Register Button */
 .btn-success {
-    background-color: #28a745;
+    background-color: #007074; /* Mid-tone for success */
     border: none;
     font-size: 16px;
     padding: 12px;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
+    color: #FFC1B4; /* Light text */
 }
 
 /* ✅ Button Hover */
 .btn-success:hover {
-    background-color: #218838;
+    background-color: #034C53; /* Darker shade */
     transform: scale(1.05);
 }
 
 /* ✅ Already Have an Account */
 .text-center a {
     font-weight: 600;
-    color: #007bff;
+    color: #F38C79; /* Accent color */
     transition: 0.3s ease-in-out;
 }
 
 .text-center a:hover {
     text-decoration: underline;
-    color: #0056b3;
-}
-
-/* ✅ Alert Messages */
-.alert {
-    padding: 12px;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 8px;
-}
-
-/* ✅ Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInBg {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes validShake {
-    0%, 100% { transform: translateX(0); }
-    25%, 75% { transform: translateX(3px); }
-    50% { transform: translateX(-3px); }
-}
-
-@keyframes invalidShake {
-    0%, 100% { transform: translateX(0); }
-    25%, 75% { transform: translateX(-3px); }
-    50% { transform: translateX(3px); }
-}
-
-/* ✅ Responsive */
-@media (max-width: 480px) {
-    .card {
-        padding: 20px;
-        width: 90%;
-    }
+    color: #007074; /* Mid-tone on hover */
 }
 
 /* ✅ Dashboard Main Container */
@@ -392,7 +310,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 76vh;
-    background-color: #f4f6f9;
+    background-color: #FFC1B4; /* Light background */
     padding: 20px;
 }
 
@@ -407,25 +325,25 @@ body {
     gap: 30px;
     width: 750px;
     max-width: 90%;
-    min-height: 250px; /* ✅ Prevents excessive height */
+    min-height: 250px;
 }
 
 /* ✅ Left Section (Text Content) */
 .dashboard-content {
     flex: 1;
     text-align: left;
-    padding-right: 15px; /* ✅ Ensures spacing between text & buttons */
+    padding-right: 15px;
 }
 
 .dashboard-title {
     font-size: 2rem;
-    color: #007bff;
+    color: #034C53; /* Dark color for title */
     font-weight: 700;
     margin-bottom: 8px;
 }
 
 .dashboard-subtitle {
-    color: #555;
+    color: #007074; /* Mid-tone for subtitle */
     font-size: 1rem;
     line-height: 1.6;
     font-weight: 500;
@@ -451,22 +369,23 @@ body {
     gap: 8px;
     justify-content: center;
     transition: all 0.3s;
-    width: 170px; /* ✅ Ensures uniform button size */
+    width: 170px;
     text-align: center;
+    color: #FFC1B4; /* Light text */
 }
 
 /* ✅ Button Colors */
-.btn-primary { background: #007bff; color: white; }
-.btn-primary:hover { background: #0056b3; }
+.btn-primary { background: #007074; }
+.btn-primary:hover { background: #034C53; }
 
-.btn-success { background: #28a745; color: white; }
-.btn-success:hover { background: #1e7e34; }
+.btn-success { background: #007074; }
+.btn-success:hover { background: #034C53; }
 
-.btn-info { background: #17a2b8; color: white; }
-.btn-info:hover { background: #117a8b; }
+.btn-info { background: #F38C79; }
+.btn-info:hover { background: #E07B68; /* Slightly darker shade of accent */ }
 
-.btn-danger { background: #dc3545; color: white; }
-.btn-danger:hover { background: #bd2130; }
+.btn-danger { background: #F38C79; }
+.btn-danger:hover { background: #E07B68; }
 
 /* ✅ Responsive Adjustments */
 @media (max-width: 768px) {
@@ -494,11 +413,9 @@ body {
     }
 }
 
-
 /* 🌟 General Styling */
 body {
-    background-color: #f8f9fa; /* Light Gray Background */
-    font-family: 'Poppins', sans-serif;
+    background-color: #FFC1B4; /* Consistent light background */
 }
 
 /* 🌟 Full-Width Card */
@@ -548,17 +465,19 @@ body {
         text-align: center;
     }
 }
+
+/* Profile Section */
 .profile-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 3px solid #007bff;
+    border: 3px solid #007074; /* Mid-tone border */
     padding: 2px;
     object-fit: cover;
 }
 
 .profile-card {
-    background: #ffffff;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -573,10 +492,11 @@ body {
 .profile-card p {
     font-size: 16px;
     margin: 5px 0;
+    color: #034C53; /* Dark text */
 }
 
 .profile-card hr {
-    border-top: 2px solid #ddd;
+    border-top: 2px solid #F38C79; /* Accent color for hr */
     margin: 10px 0;
 }
 
